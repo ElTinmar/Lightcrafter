@@ -4,9 +4,12 @@ configure Lightcrafter DMD using the USB HID protocol
 
 from https://github.com/eulerlab/QDSpy/blob/master/Devices/lightcrafter.py
 
-# Installation
+# Installation (Linux)
 
+```
+sudo apt install libhidapi-libusb0
 pip install git+https://github.com/ElTinmar/Lightcrafter.git@main
+```
 
 # Aspect ratio
 
@@ -23,7 +26,7 @@ you need to install hidapi and remove hid
 # Setting up the lightcrafter to display at 120 Hz
 
 The EDID is programmed at the factory with resolutions of 1280 x 800 and 912 x 1140 at 60 Hz.
-To make the display available at 120 Hz, it is recommended to update the EDID on the device.
+To make the display available at 120 Hz, I recommend to update the EDID on the device.
 
 ## 1. Set the J8 jumper to enable writing to EDID EEPROM
 
