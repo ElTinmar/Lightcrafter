@@ -4,6 +4,9 @@ configure Lightcrafter DMD using the USB HID protocol
 
 from https://github.com/eulerlab/QDSpy/blob/master/Devices/lightcrafter.py
 
+# Installation
+
+pip install git+https://github.com/ElTinmar/Lightcrafter.git@main
 
 # Aspect ratio
 
