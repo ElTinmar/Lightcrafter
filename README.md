@@ -27,7 +27,7 @@ To make the display available at 120 Hz, it is recommended to update the EDID on
 
 ## 1. Set the J8 jumper to enable writing to EDID EEPROM
 
-<img src=".doc/EDID_Jumper_J8.png">
+<img src="doc/EDID_Jumper_J8.png">
 
 Source: https://www.ti.com/lit/ug/dlpu011f/dlpu011f.pdf
 
@@ -82,7 +82,7 @@ wish to implement other resolutions (especially the "Detailed Timing Descriptor"
 
 ## 4.1 Required timings
 
-<img src=".doc/Timings_120Hz.png">
+<img src="doc/Timings_120Hz.png">
 
 Source: https://e2e.ti.com/support/dlp-products-group/dlp/f/dlp-products-forum/699749/dlplcr4500evm-120hz-output-in-video-mode-is-choppy
 
