@@ -13,7 +13,7 @@ pip install git+https://github.com/ElTinmar/Lightcrafter.git@main
 
 # Aspect ratio
 
-Due to the DMD geometry (diagonal vs orthogonal mirror array), the aspect ratio is modified when using native resolution: one must correct the patterns shown
+Due to the DMD geometry (diagonal vs orthogonal mirror array), the aspect ratio is modified when using native resolution: one must correct the patterns shown by $(\sqrt{2},\frac{\sqrt{2}}{2}$
 
 # Troubleshooting
 
