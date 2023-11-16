@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='ipc_tools',
+    name='lightcrafter',
     author='Martin Privat',
     version='0.1.0',
     packages=['lightcrafter','lightcrafter.tests'],
