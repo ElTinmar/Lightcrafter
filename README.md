@@ -90,6 +90,8 @@ wish to implement other resolutions (especially the "Detailed Timing Descriptor"
 
 Source: https://e2e.ti.com/support/dlp-products-group/dlp/f/dlp-products-forum/699749/dlplcr4500evm-120hz-output-in-video-mode-is-choppy
 
+Based on the DPLC350 documentation, I think Front Porch should be at least 56, blanking 130, which means Period at least 1042 
+
 ## 4.2 Flashing the EEPROM
 
 Be EXTREMELY careful when you flash the device, if you select the wrong I2C bus you
@@ -100,7 +102,7 @@ I mean seriously.
 sudo i2cset 2 0x50 0x5A 0x08 b # Pixel Clock first 8 bits | 146MHz -> 14600 -> 0x39 0x08
 sudo i2cset 2 0x50 0x5B 0x39 b # Pixel Clock last 8 bits
 sudo i2cset 2 0x50 0x5C 0x90 b # Horizontal active lower 8 bits | 912
-sudo i2cset 2 0x50 0x5D 0x80 b # Horizontal blanking lower 8 bits | 128
+sudo i2cset 2 0x50 0x5D 0x82 b # Horizontal blanking lower 8 bits | 130
 sudo i2cset 2 0x50 0x5E 0x30 b # Horizontal active upper 4 bits, Horizontal blanking upper 4 bits
 sudo i2cset 2 0x50 0x5F 0x74 b # Vertical active lower 8 bits | 1140
 sudo i2cset 2 0x50 0x60 0x1E b # Vertical blanking lower 8 bits | 30
@@ -135,7 +137,7 @@ The syntax is the following:
 ```
                Label | Pixel Clock (MHz) |                    Horizontal Settings                    |                       Vertical Settings                   |     Options
                      |                   | X-Active px | X-Sync Start  | X-Sync End   | X-Total      | Y-Active px | Y-Sync Start | Y-Sync End    | Y-Total      |        |
-Modeline    "Mode 2" | 146.00            | 912         | 922           | 986          | 1040         | 1140        | 1143          | 1153         | 1170         | +hsync | +vsync
+Modeline    "Mode 2" | 146.00            | 912         | 922           | 986          | 1042         | 1140        | 1143          | 1153         | 1170         | +hsync | +vsync
 ```
 Where 
 
