@@ -144,9 +144,10 @@ Sync Start - Active px = Back Porch
 Sync End - Sync Start = Sync Pulse Width    
 Total - Active px = Blanking     
 Total - Sync End = Front Porch   
-Total = Period    
 Horizontal frequency = Pixel Clock / X-Total  
 Vertical frequency =  Pixel Clock / (X-Total* Y-Total)  
+Blanking = Sync Pulse Width + Back Porch + Front Porch    
+Total = Period = Active + Blanking
 
 
 This procedure can be adapted to add other resolutions, a good understanding 
