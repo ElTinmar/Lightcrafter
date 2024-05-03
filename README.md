@@ -90,7 +90,7 @@ wish to implement other resolutions (especially the "Detailed Timing Descriptor"
 
 Source: https://e2e.ti.com/support/dlp-products-group/dlp/f/dlp-products-forum/699749/dlplcr4500evm-120hz-output-in-video-mode-is-choppy
 
-Based on the DPLC350 documentation, I think Front Porch should be at least 56, blanking 130, which means Period at least 1042 
+Based on the DPLC350 documentation, I think Horizontal Front Porch should be at least 56, blanking 130, which means Period at least 1042 
 
 ## 4.2 Flashing the EEPROM
 
