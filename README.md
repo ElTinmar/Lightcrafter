@@ -130,6 +130,23 @@ You should now be able to see the line:
 Modeline     "Mode 2" 146.00 912 922 986 1040 1140 1143 1153 1170 +hsync +vsync
 ```
 
+The syntax is the following:
+
+```
+               Label | Pixel Clock (MHz) |                    Horizontal Settings                    |                       Vertical Settings                   |     Options
+                     |                   | X-Active px | X-Sync Start  | X-Sync End   | X-Total      | Y-Active px | Y-Sync Start | Y-Sync End    | Y-Total      |        |
+Modeline    "Mode 2" | 146.00            | 912         | 922           | 986          | 1040         | 1140        | 1143          | 1153         | 1170         | +hsync | +vsync
+```
+Where 
+
+
+Sync Start - Active px = Back Porch
+Sync End - Sync Start = Sync Pulse Width
+Total - Active px = Blanking
+Total = Period
+
+
+
 This procedure can be adapted to add other resolutions, a good understanding 
 of the EDID specification will be necessary.
 
