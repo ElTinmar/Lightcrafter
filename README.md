@@ -146,8 +146,7 @@ Total - Active px = Blanking
 Total - Sync End = Front Porch   
 Total = Period    
 Horizontal frequency = Pixel Clock / X-Total  
-Vertical frequency = Pixel Clock / Y-Total  
-FPS =  Pixel Clock / (X-Total* Y-Total)  
+Vertical frequency =  Pixel Clock / (X-Total* Y-Total)  
 
 
 This procedure can be adapted to add other resolutions, a good understanding 
