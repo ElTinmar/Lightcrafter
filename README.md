@@ -142,7 +142,8 @@ Where
 
 Sync Start - Active px = Back Porch   
 Sync End - Sync Start = Sync Pulse Width    
-Total - Active px = Blanking     
+Total - Active px = Blanking
+Total - Sync End = Front Porch
 Total = Period    
 
 
