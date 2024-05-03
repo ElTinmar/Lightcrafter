@@ -140,10 +140,10 @@ Modeline    "Mode 2" | 146.00            | 912         | 922           | 986    
 Where 
 
 
-Sync Start - Active px = Back Porch
-Sync End - Sync Start = Sync Pulse Width
-Total - Active px = Blanking
-Total = Period
+Sync Start - Active px = Back Porch   
+Sync End - Sync Start = Sync Pulse Width    
+Total - Active px = Blanking     
+Total = Period    
 
 
 
