@@ -143,7 +143,7 @@ else:
 sudo i2cset 2 0x50 0x5A 0x08 b # Pixel Clock first 8 bits | 146MHz -> 14600 -> 0x39 0x08
 sudo i2cset 2 0x50 0x5B 0x39 b # Pixel Clock last 8 bits
 sudo i2cset 2 0x50 0x5C 0x90 b # Horizontal active lower 8 bits | 912
-sudo i2cset 2 0x50 0x5D 0x82 b # Horizontal blanking lower 8 bits | 130
+sudo i2cset 2 0x50 0x5D 0x80 b # Horizontal blanking lower 8 bits | 128
 sudo i2cset 2 0x50 0x5E 0x30 b # Horizontal active upper 4 bits, Horizontal blanking upper 4 bits
 sudo i2cset 2 0x50 0x5F 0x74 b # Vertical active lower 8 bits | 1140
 sudo i2cset 2 0x50 0x60 0x25 b # Vertical blanking lower 8 bits | 37
