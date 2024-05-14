@@ -158,7 +158,7 @@ sudo i2cset 2 0x50 0x68 0x10 b # Horizontal Image Size upper 4 bits, Vertical Im
 sudo i2cset 2 0x50 0x69 0x00 b # Horizontal border | 0
 sudo i2cset 2 0x50 0x6A 0x00 b # Vertical border | 0
 sudo i2cset 2 0x50 0x6B 0x1E b # Flags
-sudo i2cset 2 0x50 0x7F 0x5E b # Checksum
+sudo i2cset 2 0x50 0x7F 0x7A b # Checksum
 ```
 
 Check that the flash was successful:
