@@ -78,7 +78,11 @@ Once you have found the right bus, save the EDID to a file
 sudo get-edid -b 2 > original.bin 
 ``` 
 
-You can check and modify the content of the file using an hexadecimal editor such as ghex.
+You can check and modify the content of the file using an hexadecimal editor such as ghex or with wxedid.
+
+### 3.2 Upload EDID to device
+
+
 
 ## 4. Modify the EDID to advertize 912 x 1140 at 120 Hz
 
