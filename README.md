@@ -146,19 +146,19 @@ sudo i2cset 2 0x50 0x5C 0x90 b # Horizontal active lower 8 bits | 912
 sudo i2cset 2 0x50 0x5D 0x80 b # Horizontal blanking lower 8 bits | 128
 sudo i2cset 2 0x50 0x5E 0x30 b # Horizontal active upper 4 bits, Horizontal blanking upper 4 bits
 sudo i2cset 2 0x50 0x5F 0x74 b # Vertical active lower 8 bits | 1140
-sudo i2cset 2 0x50 0x60 0x39 b # Vertical blanking lower 8 bits | 57
+sudo i2cset 2 0x50 0x60 0x1E b # Vertical blanking lower 8 bits | 30
 sudo i2cset 2 0x50 0x61 0x40 b # Vertical active upper 4 bits, Vertical blanking upper 4 bits
 sudo i2cset 2 0x50 0x62 0x0A b # Horizontal Sync Offset (Back porch), lower 8 bits | 10
 sudo i2cset 2 0x50 0x63 0x40 b # Horizontal Sync pulse width, lower 8 bits | 64
-sudo i2cset 2 0x50 0x64 0xEA b # Vertical Sync Offset (Back porch) lower 4 bits, Vertical Sync pulse width lower 4 bits | 30, 10
-sudo i2cset 2 0x50 0x65 0x04 b # bit 7,6: Horizontal Sync Offset upper 2 bits, bit 5,4: Horizontal Sync pulse width upper 2 bits, bits 3,2: Vertical Sync Offset upper 2 bits, bits 1,0: Vertical Sync pulse width upper 2 bits | 30
+sudo i2cset 2 0x50 0x64 0x3A b # Vertical Sync Offset (Back porch) lower 4 bits, Vertical Sync pulse width lower 4 bits | 3, 10
+sudo i2cset 2 0x50 0x65 0x00 b # bit 7,6: Horizontal Sync Offset upper 2 bits, bit 5,4: Horizontal Sync pulse width upper 2 bits, bits 3,2: Vertical Sync Offset upper 2 bits, bits 1,0: Vertical Sync pulse width upper 2 bits
 sudo i2cset 2 0x50 0x66 0x1C b # Horizontal Image Size (mm), lower 8 bits | 284
 sudo i2cset 2 0x50 0x67 0xD5 b # Vertical Image Size (mm), lower 8 bits | 213
 sudo i2cset 2 0x50 0x68 0x10 b # Horizontal Image Size upper 4 bits, Vertical Image Size upper 4 bits
 sudo i2cset 2 0x50 0x69 0x00 b # Horizontal border | 0
 sudo i2cset 2 0x50 0x6A 0x00 b # Vertical border | 0
 sudo i2cset 2 0x50 0x6B 0x1E b # Flags
-sudo i2cset 2 0x50 0x7F 0x86 b # Checksum
+sudo i2cset 2 0x50 0x7F 0x55 b # Checksum
 ```
 
 Check that the flash was successful:
