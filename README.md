@@ -41,6 +41,8 @@ Source: https://www.ti.com/lit/ug/dlpu011f/dlpu011f.pdf
 sudo apt install ghex
 sudo apt install read-edid
 sudo apt install i2c-tools
+sudo apt install wxedid
+git clone https://github.com/ChalkElec/write-edid.git
 ```
 
 ## 3. Make a backup of the original EDID
