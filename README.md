@@ -146,7 +146,7 @@ sudo i2cset 2 0x50 0x5C 0x90 b # Horizontal active lower 8 bits | 912
 sudo i2cset 2 0x50 0x5D 0x80 b # Horizontal blanking lower 8 bits | 128
 sudo i2cset 2 0x50 0x5E 0x30 b # Horizontal active upper 4 bits, Horizontal blanking upper 4 bits
 sudo i2cset 2 0x50 0x5F 0x74 b # Vertical active lower 8 bits | 1140
-sudo i2cset 2 0x50 0x60 0x39 b # Vertical blanking lower 8 bits | 42
+sudo i2cset 2 0x50 0x60 0x39 b # Vertical blanking lower 8 bits | 57
 sudo i2cset 2 0x50 0x61 0x40 b # Vertical active upper 4 bits, Vertical blanking upper 4 bits
 sudo i2cset 2 0x50 0x62 0x0A b # Horizontal Sync Offset (Back porch), lower 8 bits | 10
 sudo i2cset 2 0x50 0x63 0x40 b # Horizontal Sync pulse width, lower 8 bits | 64
