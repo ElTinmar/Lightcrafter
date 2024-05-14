@@ -137,7 +137,7 @@ else:
     print("Please input binary size > 127 Bytes")
 ```
 
-### Flash
+### Flash each byte separately
 
 ```
 sudo i2cset 2 0x50 0x5A 0x08 b # Pixel Clock first 8 bits | 146MHz -> 14600 -> 0x39 0x08
