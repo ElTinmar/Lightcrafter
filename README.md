@@ -82,7 +82,9 @@ You can check and modify the content of the file using an hexadecimal editor suc
 
 ### 3.2 Upload EDID to device
 
-
+```
+sudo write-edid 2 original.bin 
+``` 
 
 ## 4. Modify the EDID to advertize 912 x 1140 at 120 Hz
 
