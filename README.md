@@ -98,6 +98,47 @@ Be EXTREMELY careful when you flash the device, if you select the wrong I2C bus 
 could permanently damage your computer. Do at your own risk. You have been warned.
 I mean seriously.
 
+### compute the checksum
+
+set the correct checksum , use:
+github.com/.../EDID_checksum
+
+```
+from struct import *
+import sys
+import os
+
+argvs = sys.argv
+argc = len(argvs)
+
+if (argc != 2):
+    print("please input edid binary file path for argument")
+    quit()
+
+size = os.path.getsize(argvs[1])
+if size >= 127:
+    f = open(argvs[1],'rb')
+    sum = 0
+    for i in range(127):
+        tmp = unpack('B',f.read(1))[0]
+    #    print('read:%d' % tmp)
+        sum = sum + tmp
+
+    m = 256 - (sum % 256)
+    print('Calced: %x' % m)
+    if size >= 128:
+        csum = unpack('B',f.read(1))[0]
+        print('Actual: %x' % csum)
+        if (csum == m):
+            print('Match!')
+        else:
+            print('Un-match...')
+else:
+    print("Please input binary size > 127 Bytes")
+```
+
+### Flash
+
 ```
 sudo i2cset 2 0x50 0x5A 0x08 b # Pixel Clock first 8 bits | 146MHz -> 14600 -> 0x39 0x08
 sudo i2cset 2 0x50 0x5B 0x39 b # Pixel Clock last 8 bits
