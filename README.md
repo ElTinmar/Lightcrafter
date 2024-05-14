@@ -170,7 +170,7 @@ sudo get-edid -b 2 | parse-edid
 You should now be able to see the line:
 
 ```
-Modeline     "Mode 2" 146.00 912 922 986 1040 1140 1143 1153 1170 +hsync +vsync
+Modeline     "Mode 2" 146.00 912 922 986 1042 1140 1150 1160 1177 +hsync +vsync
 ```
 
 The syntax is the following:
