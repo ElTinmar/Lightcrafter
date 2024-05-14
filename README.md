@@ -151,7 +151,7 @@ sudo i2cset 2 0x50 0x61 0x40 b # Vertical active upper 4 bits, Vertical blanking
 sudo i2cset 2 0x50 0x62 0x0A b # Horizontal Sync Offset (Back porch), lower 8 bits | 10
 sudo i2cset 2 0x50 0x63 0x40 b # Horizontal Sync pulse width, lower 8 bits | 64
 sudo i2cset 2 0x50 0x64 0xEA b # Vertical Sync Offset (Back porch) lower 4 bits, Vertical Sync pulse width lower 4 bits | 30, 10
-sudo i2cset 2 0x50 0x65 0x0C b # bit 7,6: Horizontal Sync Offset upper 2 bits, bit 5,4: Horizontal Sync pulse width upper 2 bits, bits 3,2: Vertical Sync Offset upper 2 bits, bits 1,0: Vertical Sync pulse width upper 2 bits | 30
+sudo i2cset 2 0x50 0x65 0x10 b # bit 7,6: Horizontal Sync Offset upper 2 bits, bit 5,4: Horizontal Sync pulse width upper 2 bits, bits 3,2: Vertical Sync Offset upper 2 bits, bits 1,0: Vertical Sync pulse width upper 2 bits | 30
 sudo i2cset 2 0x50 0x66 0x1C b # Horizontal Image Size (mm), lower 8 bits | 284
 sudo i2cset 2 0x50 0x67 0xD5 b # Vertical Image Size (mm), lower 8 bits | 213
 sudo i2cset 2 0x50 0x68 0x10 b # Horizontal Image Size upper 4 bits, Vertical Image Size upper 4 bits
