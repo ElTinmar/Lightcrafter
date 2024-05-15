@@ -86,6 +86,141 @@ You can check and modify the content of the file using an hexadecimal editor suc
 sudo ./write-edid 2 original.bin 
 ``` 
 
+### 3.3 EDID information for TI forum
+
+https://e2e.ti.com/support/dlp-products-group/dlp/f/dlp-products-forum/729572/linux-dlplcr4500evm-dlp4500-works-at-115-hz-but-not-120-hz
+
+```
+
+
+			Time: 4:03:32 PM
+			Date: Monday, September 01, 2014
+			EDID Manager Version: 1.0.0.14
+	___________________________________________________________________
+
+	Block 0 (EDID Base Block), Bytes 0 - 127,  128  BYTES OF EDID CODE:
+
+		        0   1   2   3   4   5   6   7   8   9   
+		000  |  00  FF  FF  FF  FF  FF  FF  00  11  90
+		010  |  00  45  01  00  00  00  0D  17  01  03
+		020  |  80  34  20  A0  02  EE  95  A3  54  4C
+		030  |  99  26  0F  50  54  00  00  00  01  00
+		040  |  01  00  01  00  01  00  01  00  01  00
+		050  |  01  00  01  00  08  39  90  80  30  74
+		060  |  1E  40  08  40  A6  00  06  44  21  00
+		070  |  00  1E  A8  20  90  18  31  74  1E  40
+		080  |  28  40  A6  00  06  44  21  00  00  1E
+		090  |  00  00  00  FC  00  4C  43  72  20  34
+		100  |  35  30  30  0A  20  20  20  20  00  00
+		110  |  00  FA  00  1D  00  3B  00  3F  0A  20
+		120  |  20  01  00  01  00  0A  00  16
+
+(8-9)    	ID Manufacture Name : DLP
+(10-11)  	ID Product Code     : 4500
+(12-15)  	ID Serial Number    : N/A
+(16)     	Week of Manufacture : 13
+(17)     	Year of Manufacture : 2013
+
+(18)     	EDID Version Number : 1
+(19)     	EDID Revision Number: 3
+
+(20)     	Video Input Definition       : Digital
+(21)     	Maximum Horizontal Image Size: 52 cm
+(22)     	Maximum Vertical Image Size  : 32 cm
+(23)     	Display Gamma                : 2.60
+(24)     	Power Management and Supported Feature(s):
+			Monochrome, Non-sRGB, Preferred Timing Mode
+
+(25-34)  	Color Characteristics
+			Red Chromaticity   :  Rx = 0.636  Ry = 0.330
+			Green Chromaticity :  Gx = 0.300  Gy = 0.596
+			Blue Chromaticity  :  Bx = 0.150  By = 0.056
+			Default White Point:  Wx = 0.313  Wy = 0.329
+
+(35)     	Established Timings I (Not Used)
+
+(36)     	Established Timings II (Not Used)
+
+(37)     	Manufacturer's Timings (Not Used)
+
+(38-53)  	Standard Timings (Not Used)
+
+(54-71)  	Detailed Descriptor #1: Preferred Detailed Timing (912x1140 @ 120Hz)
+
+			Pixel Clock            : 146 MHz
+			Horizontal Image Size  : 518 mm
+			Vertical Image Size    : 324 mm
+			Refresh Mode           : Non-interlaced
+			Normal Display, No Stereo
+
+			Horizontal:
+				Active Time     : 912 Pixels
+				Blanking Time   : 128 Pixels
+				Sync Offset     : 8 Pixels
+				Sync Pulse Width: 64 Pixels
+				Border          : 0 Pixels
+				Frequency       : 140 kHz
+
+			Vertical:
+				Active Time     : 1140 Lines
+				Blanking Time   : 30 Lines
+				Sync Offset     : 10 Lines
+				Sync Pulse Width: 6 Lines
+				Border          : 0 Lines
+
+			Digital Separate, Horizontal Polarity (+), Vertical Polarity (+)
+
+			Modeline: "912x1140" 146.000 912 920 984 1040 1140 1150 1156 1170 +hsync +vsync
+
+(72-89)  	Detailed Descriptor #2: Detailed Timing (912x1140 @ 60Hz)
+
+			Pixel Clock            : 83.6 MHz
+			Horizontal Image Size  : 518 mm
+			Vertical Image Size    : 324 mm
+			Refresh Mode           : Non-interlaced
+			Normal Display, No Stereo
+
+			Horizontal:
+				Active Time     : 912 Pixels
+				Blanking Time   : 280 Pixels
+				Sync Offset     : 40 Pixels
+				Sync Pulse Width: 64 Pixels
+				Border          : 0 Pixels
+				Frequency       : 70 kHz
+
+			Vertical:
+				Active Time     : 1140 Lines
+				Blanking Time   : 30 Lines
+				Sync Offset     : 10 Lines
+				Sync Pulse Width: 6 Lines
+				Border          : 0 Lines
+
+			Digital Separate, Horizontal Polarity (+), Vertical Polarity (+)
+
+			Modeline: "912x1140" 83.600 912 952 1016 1192 1140 1150 1156 1170 +hsync +vsync
+
+(90-107) 	Detailed Descriptor #3: Monitor Name
+
+			Monitor Name: LCr 4500
+
+(108-125)	Detailed Descriptor #4: Standard Timing Identifications
+
+
+(113-124)	Standard Timings
+
+			480x300 @ 60 Hz (16:10 Aspect Ratio)
+			720x450 @ 60 Hz (16:10 Aspect Ratio)
+			752x470 @ 70 Hz (16:10 Aspect Ratio)
+			504x315 @ 60 Hz (16:10 Aspect Ratio)
+
+(126-127)	Extension Flag and Checksum
+
+			Extension Block(s)  : 0
+			Checksum Value      : 22
+
+	___________________________________________________________________
+```
+
 ## 4. Modify the EDID to advertize 912 x 1140 at 120 Hz
 
 The VESA EDID 1.3 specification can be downloaded from here https://vesa.org/vesa-standards/ 
